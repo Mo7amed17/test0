@@ -1,0 +1,15 @@
+@media (max-width:1199px) {
+    .MY_COURSES{
+        justify-content: space-evenly !important;
+    }
+}
+@media (max-width:900px) {
+    .MY_COURSES{
+        justify-content: space-between !important;
+    }
+}
+@media (max-width:720px) {
+    .MY_COURSES{
+        justify-content: center !important;
+    }
+}

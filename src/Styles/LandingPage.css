@@ -1,0 +1,881 @@
+.LandingPage{
+    display: flex;
+    width: 100%;
+    padding: 130px 1.5% 100px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4e55b4c9;
+    position: relative;
+}
+.LandingPage .Left{
+    width: 45%;
+}
+.LandingPage .Left h1{
+    font-size: 2.3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: black;
+}
+.LandingPage .Left h4{
+    font-weight: 200;
+    font-size: 1.3rem;
+    color: #24343f;
+    margin-bottom: 30px;
+}
+.LandingPage .Left a{
+    border: 2px solid white;
+    background-color: white !important;
+    color: #4f4dbf !important;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition-duration: 0.6s;
+    font-weight: 500;
+}
+.LandingPage .Left a:hover{
+    border: 2px solid white;
+    background-color: #4f4dbf !important;
+    color: white !important;
+    transition-duration: 0.6s;
+}
+.LandingPage Button{
+    margin: 30px auto 0px;
+    color: white;
+    background-color: #504ebb;
+    border: none;
+    border-radius: 20px;
+}
+.LandingPage Button:hover{
+    background-color: #ffab11;
+}
+
+.LandingPage .Right{
+    width: 50%;
+}
+.LandingPage .Right .LandingPageImg{
+    width: 600px;
+    height: 450px;
+}
+.LandingPage .Right .LandingPageImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.IconToDown{
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translateX(-50%);
+    animation: IconToDown 2.5s linear infinite alternate ;
+}
+@keyframes IconToDown {
+    0% , 20% , 100%{
+        transform: translateY(0px);
+    }
+    10% {
+        transform: translateY(15px);
+    }
+}
+
+.LandingPageDown{
+    text-align: center;
+    margin: 40px 20px ;
+    padding: 20px 10px 20px 20px;
+    border-radius: 15px ;
+    box-shadow: 0px 0px 10px 1px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.LandingPageDown .Right {
+    width: 50%;
+    overflow: hidden;
+}
+.LandingPageDown .Right h3{
+    margin-bottom: 30px;
+}
+.LandingPageDown .Right h6{
+    margin: 10px 0px;
+    font-size: 0.9rem;
+}
+.LandingPageDown .Left{
+    width: 48%;
+    overflow: hidden;
+}
+.LandingPageDown .Card {
+    display: none;
+    width: 100%;
+    border: 1px dashed rgb(196, 196, 196);
+    border-radius: 20px;
+    overflow: hidden;
+}
+@keyframes ToRight {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.ActiveCard{
+    display: flex !important;
+    animation: ToRight 1s 0s
+}
+.LandingPageDown .Card .CardLeft {
+    width: 40%;
+}
+.LandingPageDown .Card .CardRight{
+    width: 60%;
+}
+.LandingPageDown .Card .CardLeft .CardImg{
+    width: 100%;
+    height: 200px;
+}
+.LandingPageDown .Card .CardLeft .CardImg img{
+    width: 100%;
+    height: 100%;
+}
+.LandingPageDown .Card .CardRight{
+    text-align: center;
+    margin: 5% 2px ;
+}
+
+.LandingPageDown .Card .CardRight h2{
+    font-size: 1.6rem;
+}
+.LandingPageDown .Card .CardRight p{
+    color: #24343f;
+    font-size: 0.9rem;
+}
+
+.CommonCourses{
+    margin: 0px 20px;
+    padding-top: 30px;
+    background-color: #f9fafb;
+}
+.CommonCoursesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.CourseCard {
+    cursor: pointer;
+    width: 220px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 4px rgb(221, 221, 221);
+}
+.CourseCard .Top{
+    width: 100%;
+    height: 70%;
+}
+.CourseCard .Top img{
+    width: 100%;
+    height: 100%;
+}
+.CourseCard .Down{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CourseCard .Down h6{
+    font-size: 0.8rem;
+}
+
+.Last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.Last .Right{
+    width: 30%;
+}
+.Last .Right .LastImage{
+    height: 500px;
+    width: 430px;
+}
+.Last .Right .LastImage img{
+    height: 100%;
+    width: 100%;
+}
+.Last .Left{
+    width: 55%;
+    margin: 0px 20px 0px 15px;
+}
+.Last .Left h1{
+    font-size: 2rem;
+}
+.Last .Left h5{
+    font-size: 1.1rem;
+    margin: 15px 0px;
+    position: relative;
+}
+.Last .Left h5 svg{
+    position: absolute;
+    right: -5.5%;
+}
+@media (max-width:1250px) {
+    .LandingPage{
+        justify-content: space-evenly;
+    }
+
+}
+@media (max-width:1200px) {
+.LandingPage .Right .LandingPageImg{
+    width: 550px;
+    height: 400px;
+}
+.LandingPage .Left h1{
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+.LandingPage .Left h4{
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+.LandingPageDown .Card .CardLeft .CardImg{
+    width: 100%;
+    height: 170px;
+}
+.LandingPageDown .Card .CardRight h2{
+    font-size: 1.5rem;
+}
+.LandingPageDown .Card .CardRight p{
+    font-size: 0.9rem;
+}
+}
+@media (max-width:1179px) {
+    .CommonCourses{
+        margin-bottom: 80px;
+    }
+}
+@media (max-width:1132px) {
+    .Last .Left h1{
+        font-size: 1.9rem;
+    }
+    .Last .Left h5{
+        font-size: 1rem;
+    }
+}
+@media (max-width:1100px) {
+.LandingPage .Right .LandingPageImg{
+    width: 500px;
+    height: 400px;
+}
+.LandingPage .Left h1{
+    font-size: 2rem;
+}
+.LandingPage .Left h4{
+    font-size: 1.1rem;
+}
+.Last .Right .LastImage{
+    height: 500px;
+    width: 400px;
+}
+}
+@media (max-width:1030px) {
+    .Last .Left h1{
+        font-size: 1.8rem;
+    }
+    .Last .Left h5{
+        font-size: 0.95rem;
+    }
+    .Last .Right .LastImage{
+        height: 480px;
+        width: 350px;
+    }
+}
+@media (max-width:996px) {
+.LandingPage .Right .LandingPageImg{
+    width: 450px;
+    height: 350px;
+}
+.LandingPage .Left h1{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.LandingPage .Left h4{
+    font-size: 1rem;
+}
+.LandingPage .Left a{
+    font-size: 1.1rem;
+}
+.LandingPage Button{
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+    .LandingPage{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .LandingPage .Left , .LandingPage .Right{
+        width: 100%;
+        text-align: center;
+    }
+    .LandingPage .Right{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .LandingPage .Left h4{
+        font-size: 1rem;
+        width: 60%;
+        margin: 0px auto;
+    }
+    .LearnNow{
+        margin-top: 30px;
+    }
+    .IconToDown{
+        left: 50%;
+        bottom: 4%;
+        margin-left: -1%;
+    }
+    .LandingPageDown .Right h3{
+        margin-bottom: 20px;
+        font-size: 1.4rem;
+    }
+    .LandingPageDown .Right h6{
+        font-size: 0.8rem;
+    }
+    .LandingPageDown .Card .CardLeft .CardImg{
+        height: 140px;
+    }
+    .LandingPageDown .Card .CardRight h2{
+        font-size: 1.3rem;
+    }
+    .LandingPageDown .Card .CardRight p{
+        font-size: 0.8rem;
+    }
+    .Last .Left h5{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:927px) {
+    .Last .Left h5{
+        font-size: 0.85rem;
+    }
+    .Last .Left h1{
+        font-size: 1.75rem;
+    }
+    .Last .Left h5 svg {
+        position: absolute;
+        right: -6%;
+        top: -20%;
+    }
+    .Last .Right .LastImage{
+        height: 450px;
+        width: 320px;
+    }
+}
+@media (max-width:875px) {
+    .Last .Left h5{
+        font-size: 0.8rem;
+    }
+    .Last .Left h1{
+        font-size: 1.7rem;
+    }
+    .Last .Right .LastImage{
+        height: 440px;
+        width: 310px;
+    }
+}
+@media (max-width:830px) {
+    .LandingPageDown .Right h3{
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+    }
+    .LandingPageDown .Right h6{
+        font-size: 0.7rem;
+    }
+    .LandingPageDown .Card .CardLeft .CardImg{
+        height: 115px;
+    }
+    .LandingPageDown .Card .CardRight h2{
+        font-size: 1.1rem;
+    }
+    .LandingPageDown .Card .CardRight p{
+        font-size: 0.7rem;
+    }
+    .CommonCoursesHeaderButtons button{
+        margin: 0px 10px;
+        padding: 4px 14px;
+        font-size: 0.9rem;
+    }
+    .CommonCoursesHeader h2{
+        font-size: 1.5rem;
+    }
+    .CommonCoursesHeader h6{
+        font-size: 0.85rem;
+    }
+    .Last .Left {
+        margin: 0px 20px 0px 5px;
+    }
+    .Last .Left h5{
+        font-size: 0.7rem;
+    }
+    .Last .Left h1{
+        font-size: 1.5rem;
+    }
+    .Last .Left h5 svg {
+        right: -7%;
+    }
+    .Last .Right .LastImage{
+        width: 300px;
+    }
+}
+@media (max-width:745px) {
+    .LandingPageDown .Right h3{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    .LandingPageDown .Right h6{
+        font-size: 0.55rem;
+    }
+    .LandingPageDown .Card .CardRight h2{
+        font-size: 1rem;
+    }
+    .LandingPageDown .Card .CardRight p{
+        font-size: 0.6rem;
+    }
+    .CommonCourses{
+        margin: 100px 20px 0px ;
+    }
+    .Last .Left h5{
+        font-size: 0.6rem;
+    }
+    .Last .Left h1{
+        font-size: 1.3rem;
+    }
+    .Last .Left h5 svg {
+        right: -8%;
+        top: -50%;
+    }
+    .Last .Right .LastImage{
+        height: 380px;
+        width: 260px;
+    }
+}
+@media (max-width:702px) {
+    .LandingPage .Left h1{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    .LandingPage .Left h4{
+        font-size: 0.9rem;
+    }
+    .LandingPage .Left a{
+        font-size: 1rem;
+    }
+    .LandingPage Button{
+        font-size: 0.8rem;
+    }
+    .LandingPageDown .Right h3{
+        font-size: 0.9rem;
+    }
+    .LandingPageDown .Right h6{
+        font-size: 0.5rem;
+    }
+    .LandingPageDown .Card .CardLeft .CardImg{
+        height: 90px;
+    }
+    .LandingPageDown .Card .CardRight h2{
+        font-size: 0.9rem;
+    }
+    .LandingPageDown .Card .CardRight p{
+        font-size: 0.5rem;
+    }
+}
+@media (max-width:675px) {
+    .Last .Left h5{
+        font-size: 0.6rem;
+    }
+    .Last .Left h1{
+        font-size: 1.1rem;
+    }
+    .Last .Left h5 svg {
+        right: -8%;
+        top: -50%;
+    }
+    .Last .Right .LastImage{
+        height: 330px;
+        width: 220px;
+    }
+}
+@media (max-width:618px) {
+    .Last {
+        margin: 50px 0px;
+    }
+    .Last .Right{
+        display: none;
+    }
+    .Last .Left{
+        margin: 0px 70px 0px 0px;
+        width: 100%;
+    }
+    .Last .Left h5{
+        font-size: 0.8rem;
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .Last .Left h1{
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .Last .Left h5 svg {
+        right: -7%;
+        top: -30%;
+    }
+}
+@media (max-width:575px) {
+    .LandingPage .Right .LandingPageImg{
+        margin-top: 30px;
+        width: 400px;
+        height: 300px;
+    }
+    .IconToDown{
+        margin-left: -2%;
+    }
+    .LandingPageDown{
+        margin-top: 180px;
+        flex-wrap: wrap;
+    }
+    .LandingPageDown .Right , .LandingPageDown .Left{
+        width: 100%;
+    }
+    .LandingPageDown .Left{
+        margin-top: 20px;
+    }
+    .LandingPageDown .Right h3{
+        font-size: 1rem;
+    }
+    .LandingPageDown .Right h6{
+        font-size: 0.6rem;
+    }
+    .LandingPageDown .Card .CardLeft .CardImg{
+        height: 130px;
+    }
+    .LandingPageDown .Card .CardRight h2{
+        font-size: 1.2rem;
+    }
+    .LandingPageDown .Card .CardRight p{
+        font-size: 0.8rem;
+        margin: 0px 10px;
+    }
+    .CommonCoursesHeaderButtons {
+        margin: 20px 0px;
+    }
+    .CommonCoursesHeaderButtons button{
+        margin: 0px 5px;
+        padding: 3px 12px;
+        font-size: 0.8rem;
+    }
+    .CourseCard {
+        cursor: pointer;
+        width: 180px;
+        height: 200px;
+        margin: 20px 0px;
+    }
+}
+@media (max-width:535px) {
+        .Last .Left h5{
+            font-size: 0.7rem;
+            margin: 15px 0px;
+        }
+        .Last .Left h1{
+            font-size: 1.2rem;
+        }
+        .Last .Left h5 svg {
+            right: -7%;
+            top: -30%;
+        }
+}
+@media (max-width:485px) {
+        .Last .Left h5{
+            font-size: 0.65rem;
+            margin: 12px 0px;
+        }
+        .Last .Left h1{
+            font-size: 1.1rem;
+        }
+        .Last .Left h5 svg {
+            right: -6%;
+            width: 20px;
+            height: 20px;
+        }
+}
+@media (max-width:450px) {
+    .LandingPage .Right .LandingPageImg{
+        margin-top: 30px;
+        width: 350px;
+        height: 250px;
+    }
+    .LandingPage .Left h1{
+        font-size: 1.4rem;
+    }
+    .LandingPage .Left h4{
+        font-size: 0.8rem;
+    }
+    .LandingPage .Left a{
+        font-size: 0.9rem;
+    }
+    .LandingPage Button{
+        font-size: 0.7rem;
+    }
+    .LandingPageDown .Left{
+        margin-top: 20px;
+    }
+    .LandingPageDown .Right h3{
+        font-size: 1rem;
+    }
+    .LandingPageDown .Right h6{
+        font-size: 0.55rem;
+    }
+    .LandingPageDown .Card .CardLeft .CardImg{
+        height: 110px;
+    }
+    .LandingPageDown .Card .CardRight h2{
+        font-size: 1rem;
+    }
+    .LandingPageDown .Card .CardRight p{
+        font-size: 0.65rem;
+    }
+    .CommonCourses {
+        margin: 70px 20px 50px;
+    }
+    .CommonCoursesHeader h2 {
+        font-size: 1.3rem;
+    }
+    .CommonCoursesHeader h6 {
+        font-size: 0.7rem;
+    }
+    .CommonCoursesHeaderButtons button{
+        margin: 0px 5px;
+        padding: 2px 8px;
+        font-size: 0.7rem;
+        border-width: 1px;
+    }
+    .CourseCard {
+        width: 140px;
+        height: 160px;
+        margin: 20px 0px;
+    }
+    .CourseCard .Down h6 {
+        font-size: 0.65rem;
+    }
+    .Last .Left h5{
+        font-size: 0.6rem;
+        margin: 12px 0px;
+    }
+    .Last .Left h1{
+        font-size: 1rem;
+    }
+    .Last .Left h5 svg {
+        right: -6%;
+        width: 16px;
+        height: 16px;
+        top: -10%;
+    }
+    .Last .Left {
+        margin: 0px 40px 0px 0px;
+    }
+}
+@media (max-width:392px) {
+    .LandingPage .Right .LandingPageImg{
+        margin-top: 30px;
+        width: 300px;
+        height: 200px;
+    }
+    .LandingPage .Left h1{
+        font-size: 1.2rem;
+    }
+    .LandingPage .Left h4{
+        font-size: 0.7rem;
+        width:80%;
+    }
+    .LandingPage .Left a{
+        font-size: 0.8rem;
+    }
+    .LandingPage Button{
+        font-size: 0.6rem;
+    }
+    .IconToDown{
+        margin-left: -3%;
+    }
+    .CommonCoursesHeader h2 {
+        font-size: 1.2rem;
+    }
+    .CommonCoursesHeader h6 {
+        font-size: 0.6rem;
+    }
+    .CommonCoursesHeaderButtons button{
+        margin: 0px 4px;
+        font-size: 0.62rem;
+    }
+    .CourseCard {
+        width: 120px;
+        height: 140px;
+        margin: 12px 0px;
+    }
+    .CourseCard .Down h6 {
+        font-size: 0.6rem;
+    }
+    .Last .Left h5{
+        font-size: 0.55rem;
+        margin: 10px 0px;
+    }
+    .Last .Left h1{
+        font-size: 0.9rem;
+    }
+    .Last .Left h5 svg {
+        right: -6%;
+    }
+    .Last .Left {
+        margin: 0px 30px 0px 0px;
+    }
+}
+@media (max-width:350px) {
+    .Last {
+        margin: 50px 0px 30px;
+    }
+    .Last .Left h5{
+        font-size: 0.5rem;
+    }
+    .Last .Left h1{
+        font-size: 0.9rem;
+    }
+    .Last .Left h5 svg {
+        right: -6%;
+        width: 14px;
+        height: 14px;
+    }
+    .Last .Left {
+        margin: 0px 30px 0px 0px;
+    }
+}
+@media (max-width:330px) {
+    .LandingPage .Right .LandingPageImg{
+        margin-top: 30px;
+        width: 270px;
+        height: 150px;
+    }
+    .LandingPage .Left h1{
+        font-size: 1rem;
+    }
+    .LandingPage .Left h4{
+        font-size: 0.55rem;
+        width:80%;
+    }
+    .LandingPage .Left a{
+        font-size: 0.65rem;
+    }
+    .LandingPage Button{
+        font-size: 0.5rem;
+    }
+    .LandingPageDown .Left{
+        margin-top: 8px;
+    }
+    .LandingPageDown .Right h3{
+        font-size: 0.9rem;
+    }
+    .LandingPageDown .Right h6{
+        font-size: 0.45rem;
+    }
+    .LandingPageDown .Card .CardLeft .CardImg{
+        height: 85px;
+    }
+    .LandingPageDown .Card .CardRight h2{
+        font-size: 0.8rem;
+    }
+    .LandingPageDown .Card .CardRight p{
+        font-size: 0.5rem;
+    }
+
+    .CommonCoursesHeader h2 {
+        font-size: 1rem;
+    }
+    .CommonCoursesHeader h6 {
+        font-size: 0.5rem;
+    }
+    .CommonCoursesHeaderButtons button{
+        margin: 0px 4px;
+        font-size: 0.52rem;
+    }
+    .CourseCard {
+        width: 100px;
+        height: 120px;
+        margin: 8px 0px;
+    }
+    .CourseCard .Down h6 {
+        font-size: 0.5rem;
+    }
+    .Last {
+        margin: 50px 0px 30px;
+    }
+    .Last .Left h5{
+        font-size: 0.45rem;
+    }
+    .Last .Left h1{
+        font-size: 0.8rem;
+    }
+    .Last .Left h5 svg {
+        right: -7%;
+        width: 14px;
+        height: 14px;
+    }
+}
+@media (max-width:295px) {
+    .Last .Left h5{
+        font-size: 0.4rem;
+    }
+    .Last .Left h1{
+        font-size: 0.7rem;
+    }
+    .Last .Left h5 svg {
+        right: -8%;
+        top: -50%;
+    }
+}
+@media (max-width:286px) {
+    .LandingPage .Right .LandingPageImg{
+        margin-top: 30px;
+        width: 220px;
+        height: 120px;
+    }
+    .LandingPage .Left h1{
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+    }
+    .LandingPage .Left h4{
+        font-size: 0.55rem;
+        width:80%;
+    }
+    .LandingPage .Left a{
+        font-size: 0.65rem;
+    }
+    .LandingPage Button{
+        font-size: 0.5rem;
+    }
+    
+
+    .LandingPageDown .Left{
+        margin-top: 4px;
+    }
+    .LandingPageDown .Right h3{
+        font-size: 0.8rem;
+    }
+    .LandingPageDown .Right h6{
+        font-size: 0.4rem;
+    }
+    .LandingPageDown .Card .CardLeft .CardImg{
+        height: 75px;
+    }
+    .LandingPageDown .Card .CardRight h2{
+        font-size: 0.7rem;
+    }
+    .LandingPageDown .Card .CardRight p{
+        font-size: 0.40rem;
+    }
+}

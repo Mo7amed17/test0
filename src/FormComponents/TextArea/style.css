@@ -1,0 +1,83 @@
+.TextAreaComponentDiv{
+    text-align: start;
+    padding: 0 !important;
+    margin-bottom: 20px;
+    position: relative;
+}
+.ant-input-affix-wrapper{
+    border-color: #e6e6e6 !important;
+}
+.ant-input-affix-wrapper:hover{
+    border-color: #e6e6e6 !important;
+}
+
+.TextAreaComponent{
+    border: 1px solid #e6e6e6;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    display: block;
+}
+.ant-input-affix-wrapper-focused{
+    box-shadow: none;
+    animation: Form-Components 0.7s linear infinite alternate;
+}
+@keyframes Form-Components {
+    to{
+        box-shadow: 0px 0px 4px 1px rgb(224, 224, 224);
+    }
+}
+
+.ValidationComponent .ant-input-affix-wrapper{
+    transition-duration: 0.8s !important;
+    border-color: red !important;
+    color: red !important;
+}
+.ValidationComponent {
+    transition-duration: 0.8s !important;
+    color: red !important;
+}
+.ShowPass{
+    position: absolute;
+    width: fit-content !important;
+    padding:0px !important;
+    left: 3%;
+    top: 50%;
+    cursor: pointer;
+    color: gray;
+}
+
+@media (max-width:450px) {
+    .TextAreaComponent{
+        padding: 4px 8px;
+        font-size: 0.7rem;
+    }
+    .TextAreaComponentDiv Label{
+        font-size: 0.7rem !important;
+    }
+    .TextAreaComponentDiv svg{
+        width: 14px ;
+        height: 14px ;
+    }
+    .TextAreaComponentDiv input{
+        font-size: 0.6rem !important;
+    }
+    .TextAreaComponentDiv{
+        margin-bottom: 20px;
+    }
+    .TextAreaComponentDiv .ErrorMessageValidation{
+        bottom: -10%;
+    }
+}
+@media (max-width:380px) {
+    .TextAreaComponentDiv Label{
+        font-size: 0.6rem !important;
+    }
+    .TextAreaComponentDiv svg{
+        width: 12px ;
+        height: 12px ;
+    }
+    .TextAreaComponentDiv input{
+        font-size: 0.5rem !important;
+    }
+}

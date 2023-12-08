@@ -1,0 +1,46 @@
+.ShowUploadedFiles{
+    cursor: pointer;
+    margin-top: 10px;
+}
+.FileUploader{
+    margin-bottom: 15px;
+}
+.ant-space-item , .ant-upload , .FileUploader button{
+    width: 100% !important;
+}
+.ErrorLogoValidation{
+    border-color: red !important;
+    transition-duration: 0.8s;
+}
+.ErrorLogoValidation svg{
+    color: rgb(236, 4, 4) !important;
+    transition-duration: 0.8s;
+}
+.ant-btn{
+border-color: #e6e6e6 !important;
+}
+.ant-btn:hover{
+border-color: #e6e6e6 !important;
+color: black !important;
+}
+.ErrorValidationUploadFiles{
+border-color: red !important;
+color: red !important;
+}
+.ErrorValidationUploadFiles:hover{
+border-color: red !important;
+color: red !important;
+}
+@media (max-width:450px) {
+    .ant-btn {
+        font-size: 0.6rem !important;
+    }
+    .ant-space{
+        margin-bottom: 5px !important;
+    }
+}
+@media (max-width:320px) {
+    .ant-btn {
+        font-size: 0.5rem !important;
+    }
+}

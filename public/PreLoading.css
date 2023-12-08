@@ -1,0 +1,28 @@
+.PreLoading{
+    height: 100vh;
+    width: 100%;
+    background-color: #0e1e2f ;
+    text-align: center;
+}
+.PreLoading img{
+    margin-top: 100px;
+    height: 300px;
+    width: 400px;
+}
+@media (max-width:767px) {
+    .PreLoading img{
+        margin-top: 150px;
+    }
+}
+@media (max-width:400px) {
+    .PreLoading img{
+        height: 250px;
+        width: 300px;
+    }
+}
+@media (max-width:300px) {
+    .PreLoading img{
+        height: 200px;
+        width: 200px;
+    }
+}

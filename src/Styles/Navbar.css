@@ -1,0 +1,128 @@
+header {
+    background-image: linear-gradient(to right, rgba(82,80,179,1), rgb(77, 75, 199));
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 1rem 0px 1.7rem;
+    top: 0%;
+}
+header img{
+    width: 70px;
+    height: 70px;
+}
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul a {
+    font-size: 1.2rem;
+}
+header ul .LoginButton{
+    border: 2px solid white;
+    background-color: white;
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    border-radius: 0.8rem;
+    color: #4f4dbf !important;
+    font-size: 1rem;
+    transition-duration: 0.6s;
+}
+header ul .LoginButton:hover{
+    transition-duration: 0.6s;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white !important;
+}
+@media (max-width:996px) {
+    header ul .LoginButton{
+        padding: 0.2rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:830px) {
+    header ul .LoginButton{
+        padding: 0.2rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:767px) {
+    .Welcome_USER{
+        font-size: 1.1rem;
+    }
+    header ul .LoginButton{
+        padding: 0.2rem 0.6rem;
+        font-size: 0.7rem;
+    }
+    header ul a {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:650px) {
+    .Welcome_USER{
+        font-size: 1rem;
+    }
+    header img{
+        width: 50px;
+        height: 50px;
+    }
+    header ul .LoginButton{
+        padding: 0.16rem 0.5rem;
+        font-size: 0.6rem;
+    }
+    header ul a {
+        font-size: 0.8rem;
+    }
+    .LoginUl{
+        justify-content: space-between;
+    }
+}
+@media (max-width:575px) {
+    header ul .LoginButton{
+        padding: 0.2rem 0.7rem;
+        font-size: 0.7rem;
+    }
+    header ul a {
+        font-size: 0.8rem;
+    }
+    .LoginUl{
+        justify-content: space-evenly;
+    }
+}
+@media (max-width:450px) {
+    .Welcome_USER{
+        font-size: 0.9rem;
+    }
+    header{
+        padding: 0.8rem 0 1.4rem;
+    }
+    header img{
+        width: 40px;
+        height: 40px;
+    }
+}
+@media (max-width:300px) {
+    header ul .LoginButton{
+        padding: 0.2rem 0.6rem;
+        font-size: 0.65rem;
+    }
+    header ul a {
+        font-size: 0.7rem;
+    }
+    .LoginUl{
+        justify-content: space-between;
+    }
+}
+.ActiveNavbarLink{
+    position: relative;
+}
+.ActiveNavbarLink::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: -20%;
+    left: 0%;
+}

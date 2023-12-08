@@ -1,0 +1,22 @@
+.SelectCountry {
+    padding: 0px !important;
+    margin-top: 10px !important;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 15px;
+}
+.SelectCountry .ErrorMessageValidation{
+    bottom: -30% !important;
+}
+.css-b62m3t-container{
+    width: 100%;
+    outline: none;
+}
+.country-option img{
+width: 20px;
+height: 20px;
+margin-left: 5px;
+border-radius: 50%;
+}

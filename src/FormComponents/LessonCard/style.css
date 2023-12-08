@@ -1,0 +1,175 @@
+.LessonCard{
+    width: 300px;
+    min-height: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px rgba(204, 204, 204, 0.863);
+    margin: 15px 10px;
+    position: relative;
+    color: black !important;
+}
+.LessonCardImg{
+    width: 100%;
+    height: 220px;
+    margin: 0px auto;
+    position: relative;
+    border-bottom: 2px solid rgb(196, 196, 196);
+}
+.AddToFavorite{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 5px 5px 3px;
+    border-radius: 50%;
+}
+.AddToFavorite svg{
+    cursor: pointer;
+}
+.card-ribbon {
+    position: absolute;
+    overflow: hidden;
+    top: -10px;
+    left: -10px;
+    width: 114px;
+    height: 112px;
+}
+.card-ribbon span {
+    position: absolute;
+    display: block;
+    width: 160px;
+    padding: 10px 0;
+    background-color: #0f1820;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 14px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    left: -35px;
+    top: 25px;
+    transform: rotate(-45deg);
+    z-index: 2;
+    font-size: 0.7rem;
+}
+.card-ribbon::before,.card-ribbon::after {
+    position: absolute;
+    z-index: 2;
+    content: '';
+    display: block;
+    border: 5px solid #0f1820;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+.card-ribbon::before {
+    top: 0;
+    right: 0;
+}
+.card-ribbon::after{
+    bottom: 0;
+    left: 0;
+}
+.LessonCardImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+.LessonCardContainer{
+    padding: 10px;
+}
+.LessonCard h6{
+    margin-bottom: 25px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.LessonCard h4{
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+}
+.TeacherLessonCard img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: -2px 0px 0px 5px;
+}
+.LessonCard .Information{
+    text-align: center;
+}
+.LessonCard a{
+    width: 100% !important;
+    display: block;
+    background-color: #0f1820;
+    border: none;
+    outline: none;
+    color: white !important;
+    font-weight: bold;
+    padding: 7px 0px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.LessonCard h5{
+    font-size: 0.7rem;
+    text-align: start;
+    margin-top: 20px;
+}
+@media (max-width:840px) {
+    .LessonCard{
+        width: 280px;
+        min-height: 320px;
+    }
+
+}
+@media (max-width:800px) {
+    .LessonCard{
+        margin: 15px 0px;
+    }
+    .AddToFavorite svg{
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width:720px) {
+    .LessonCard{
+        width: 300px;
+        min-height: 350px;
+        margin: 15px 10px;
+    }
+    .LessonCard a{
+        padding: 7px 0px;
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:499px) {
+    .LessonCard{
+        width: 200px;
+        min-height: 250px;
+        margin: 15px 0px ;
+    }
+    .LessonCardImg{
+        height: 180px;
+    }
+    .LessonCard a{
+        padding: 4px 0px;
+        font-size: 0.7rem;
+    }
+    .LessonCard h6{
+        font-size: 0.7rem;
+    }
+    .LessonCard h4{
+        margin-bottom: 10px;
+        font-size: 0.6rem;
+    }
+    .card-ribbon span {
+        font-size: 0.6rem;
+    }
+    .TeacherLessonCard img{
+        width: 20px;
+        height: 20px;
+        margin: -2px 0px 0px 2px;
+    }
+    .AddToFavorite svg{
+        width: 24px;
+        height: 24px;
+    }
+}

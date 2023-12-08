@@ -1,0 +1,37 @@
+.RadioButton{
+  position: relative;
+  margin: 10px 0px 0px !important;
+}
+.RadioButton .ErrorMessageValidation{
+  bottom: -20% !important;
+}
+
+.form-check-input:checked {
+    background-color: #4e55b4c9 !important;
+    border-color: #4e55b4c9 !important;
+    box-shadow: none !important;
+    }
+.form-check-input {
+    width: 0.9em !important;
+    height: 0.9em !important;
+    margin-top: 7px !important;
+    background-image: none !important;
+  }
+  .ActiveRadioLabel{
+    color: #4e55b4c9 !important;
+  }
+  .RadioValidation Label{
+    color: red;
+  }
+  .RadioValidation Input{
+    border-color: red;
+  }
+
+  @media (max-width:350px) {
+    .RadioButton{
+      margin-right: -13px !important;
+    }
+    .RadioButton Label{
+      font-size: 0.8rem !important;
+    }
+  }

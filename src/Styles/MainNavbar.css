@@ -1,0 +1,175 @@
+.MainNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 10px ;
+    background-color: white;
+    box-shadow: 0px 0px 10px 1px rgb(219, 219, 219);
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+.MainNavbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.MainNavbar ul li:first-of-type{
+    display: flex;
+    align-items: center;
+}
+.MainNavbar ul img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    cursor: default;
+}
+.MainNavbar ul h6{
+    font-size: 0.8rem;
+    margin-bottom: 0.4rem;
+}
+.MainNavbar ul li a svg{
+    margin-right: 3px
+}
+.MainNavbar ul li span{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 5px;
+    border-radius: 10px;
+}
+.MainNavbar ul li span:hover{
+    background-color: rgba(219, 219, 219, 0.281);
+}
+.ant-dropdown ul{
+    margin-top: 8px !important;
+    width: max-content;
+    text-align: center;
+}
+.ant-dropdown ul li:first-of-type{
+    border-bottom: 1px solid gray;
+    border-radius: 0px !important;
+}
+.UserDataNav {
+    line-height: 0px !important;
+}
+.UserDataNav .badge{
+    margin: 0;
+    font-size: 0.75rem;
+    padding: 3px 8px 4px;
+    font-weight: bold;
+}
+@media (max-width:767px) {
+    .MainNavbar ul img{
+        width: 38px;
+        height: 38px;
+    }
+    .MainNavbar ul h6{
+        font-size: 0.75rem;
+    }
+    .UserDataNav .badge{
+        font-size: 0.7rem !important;
+    }
+    .MainNavbar ul li a{
+        font-size: 0.85rem;
+    }
+    .MainNavbar ul li a svg{
+        width: 22px;
+        height: 22px;
+    }
+    .MainNavbar span{
+        font-size: 0.9rem !important;
+    }
+    .MainNavbar span svg{
+        width: 18px;
+        height: 18px;
+    }
+}
+@media (max-width:560px) {
+    .MainNavbar{
+        padding: 3px 5px;
+    }
+    .MainNavbar ul img{
+        width: 30px;
+        height: 30px;
+    }
+    .MainNavbar ul h6{
+        font-size: 0.65rem;
+    }
+    .UserDataNav .badge{
+        font-size: 0.6rem !important;
+    }
+    .MainNavbar ul li a{
+        font-size: 0.75rem;
+    }
+    .MainNavbar ul li a svg{
+        width: 18px;
+        height: 18px;
+    }
+    .MainNavbar span{
+        font-size: 0.75rem !important;
+    }
+    .MainNavbar span svg{
+        width: 16px;
+        height: 16px;
+        margin-right: 2px !important;
+    }
+}
+@media (max-width:450px) {
+    .MainNavbar ul img{
+        width: 25px;
+        height: 25px;
+    }
+    .MainNavbar ul h6{
+        font-size: 0.6rem;
+        margin-bottom: 5px;
+    }
+    .UserDataNav .badge{
+        font-size: 0.6rem !important;
+        padding: 1px 6px 2px ;
+        font-weight: normal;
+    }
+    .MainNavbar ul li a{
+        font-size: 0.7rem;
+    }
+    .MainNavbar ul li a svg{
+        width: 15px;
+        height: 15px;
+    }
+    .MainNavbar span{
+        font-size: 0.7rem !important;
+    }
+    .MainNavbar span svg{
+        width: 15px;
+        height: 15px;
+        margin-right: 2px !important;
+    }
+}
+@media (max-width:360px) {
+    .MainNavbar{
+        padding: 3px 5px 3px 1px;
+    }
+    .MainNavbar ul h6{
+        font-size: 0.5rem;
+    }
+    .UserDataNav .badge{
+        font-size: 0.5rem !important;
+        padding: 1px 4px 2px ;
+    }
+    .MainNavbar ul li a{
+        font-size: 0.6rem;
+    }
+    .MainNavbar ul li a svg{
+        width: 15px;
+        height: 15px;
+    }
+    .MainNavbar span{
+        font-size: 0.6rem !important;
+    }
+    .MainNavbar span svg{
+        width: 12px;
+        height: 12px;
+        margin-right: 2px !important;
+    }
+}

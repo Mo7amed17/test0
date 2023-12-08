@@ -1,0 +1,83 @@
+.Select {
+    padding: 0px !important;
+    margin-top: 10px !important;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 15px;
+}
+.Select .ErrorMessageValidation{
+    bottom: -30% !important;
+}
+.css-b62m3t-container{
+    width: 100%;
+    outline: none;
+}
+.country-option img{
+width: 20px;
+height: 20px;
+margin-left: 5px;
+border-radius: 50%;
+}
+
+@media (max-width:767px) {
+.mohamed__control{
+    min-height: 30px !important;
+    height: 30px !important;
+}
+.mohamed__value-container{
+    margin-top: -5px !important;
+}
+.mohamed__indicator{
+    padding-top: 4px !important;
+}
+.mohamed__indicator-separator{
+    margin-bottom: 10px !important;
+    margin-top: 5px !important;
+}
+}
+@media (max-width:450px) {
+    .mohamed__control{
+        min-height: 25px !important;
+        height: 25px !important;
+        font-size: 0.7rem !important;
+    }
+    .mohamed__value-container{
+        margin-top: -8px !important;
+    }
+    .mohamed__indicator{
+        padding-top: 2px !important;
+    }
+    .mohamed__indicator-separator{
+        margin-bottom: 12px !important;
+        margin-top: 4px !important;
+    }
+    .select_label{
+        font-size: 0.7rem !important;
+    }
+}
+@media (max-width:350px) {
+    .mohamed__control{
+        min-height: 20px !important;
+        height: 20px !important;
+        font-size: 0.6rem !important;
+    }
+    .mohamed__menu div{
+        font-size: 0.6rem !important;
+        padding: 2px 5px !important;
+    }
+    .mohamed__value-container{
+        margin-top: -11px !important;
+    }
+    .mohamed__indicator{
+        padding-top: 0px !important;
+    }
+    .mohamed__indicator-separator{
+        margin-bottom: 12px !important;
+        margin-top: 2px !important;
+    }
+.select_label{
+    font-size: 0.6rem !important;
+}
+}

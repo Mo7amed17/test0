@@ -1,0 +1,87 @@
+.InputComponentDiv{
+    width: 300px;
+    text-align: start;
+    padding: 0 !important;
+    margin-bottom: 20px;
+    position: relative;
+}
+.InputComponent{
+    border: 1px solid #e6e6e6;
+    border-radius: 15px;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    display: block;
+    width: 100%;
+}
+.InputComponent:focus{
+    animation: Form-Components 0.7s linear infinite alternate;
+}
+@keyframes Form-Components {
+    to{
+        box-shadow: 0px 0px 4px 1px rgb(224, 224, 224);
+    }
+}
+
+.ValidationComponent .InputComponent{
+    transition-duration: 0.8s;
+    border-color: red;
+    color: red;
+}
+.ShowPass{
+    position: absolute;
+    width: fit-content !important;
+    padding:0px !important;
+    left: 3%;
+    top: 50%;
+    cursor: pointer;
+    color: gray;
+}
+
+@media (max-width:767px) {
+    .InputComponent{
+        padding: 4px 8px;
+        font-size: 0.8rem;
+    }
+    .InputComponentDiv Label{
+        font-size: 0.8rem !important;
+    }
+    .InputComponentDiv svg{
+        width: 15px ;
+        height: 15px ;
+    }
+    .InputComponentDiv input{
+        font-size: 0.7rem !important;
+    }
+}
+@media (max-width:450px) {
+    .InputComponent{
+        padding: 4px 8px;
+        font-size: 0.7rem;
+    }
+    .InputComponentDiv Label{
+        font-size: 0.7rem !important;
+    }
+    .InputComponentDiv svg{
+        width: 14px ;
+        height: 14px ;
+    }
+    .InputComponentDiv input{
+        font-size: 0.6rem !important;
+    }
+    .InputComponentDiv{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:380px) {
+    .InputComponentDiv Label{
+        font-size: 0.6rem !important;
+    }
+    .InputComponentDiv svg{
+        width: 12px ;
+        height: 12px ;
+    }
+    .InputComponentDiv input{
+        font-size: 0.5rem !important;
+    }
+}

@@ -1,0 +1,19 @@
+.form-check-label{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+@media (max-width:776px) {
+    .form-check-label{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width:450px) {
+    .form-check-label{
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:350px) {
+    .form-check-label{
+        font-size: 0.7rem;
+    }
+}

@@ -1,0 +1,116 @@
+.ant-layout{
+    background-color: white !important;
+}
+.ant-layout-sider{
+    background-color: #0f1820 !important;
+}
+.ant-layout-sider ul{
+    background-color: #0f1820 !important;
+    color: white !important;
+    font-size: 1.1rem;
+    margin-top: 20px !important;
+    font-weight: bold;
+}
+.ant-layout-sider ul li{
+    margin-bottom: 10px !important;
+}
+.ant-menu-item-selected{
+    background-color: white !important;
+    color: #0f1820 !important;
+}
+.ant-layout-header{
+    display: flex;
+    background-color: white !important;
+    height: 55px;
+    align-items: center;
+    width: calc(100% - 220px);
+    margin: 7px 10px;
+    z-index: 3;
+}
+.ant-layout-content{
+    margin: 90px 20px ;
+    min-height: 500px;
+}
+.AdminLogin{
+    margin-top: 30px;
+}
+@media (max-width:767px) {
+    .ant-layout-header{
+        height: 50px;
+        width: calc(100% - 170px);
+    }
+    .ant-layout-content{
+        margin: 90px 10px !important;
+    }
+    .ant-layout-sider ul li{
+        font-size: 0.9rem;
+    }
+    .ant-layout-sider{
+        width: 150px !important;
+        flex-basis: 0px !important;
+        min-width: 150px !important;
+    }
+}
+@media (max-width:580px) {
+    .ant-layout-header{
+        height: 45px;
+        width: calc(100% - 140px);
+    }
+    .ant-layout-sider{
+        width: 120px !important;
+        flex-basis: 0px !important;
+        min-width: 120px !important;
+    }
+    .ant-layout-sider ul li{
+        font-size: 0.8rem;
+        padding: 0px 5px 0px 0px !important;
+    }
+    .ant-layout-sider ul li svg{
+        width: 18px;
+        height: 18px;
+    }
+}
+@media (max-width:450px) {
+    .ant-layout-header{
+        height: 40px;
+        width: calc(100% - 110px);
+    }
+    .ant-layout-sider{
+        width: 90px !important;
+        flex-basis: 0px !important;
+        min-width: 90px !important;
+    }
+    .ant-layout-sider ul li{
+        font-size: 0.7rem;
+        padding: 0px 3px 0px 0px !important;
+    }
+    .ant-layout-sider ul span{
+        margin-right: 4px !important;
+    }
+    .ant-layout-sider ul li svg{
+        width: 15px;
+        height: 15px;
+    }
+}
+@media (max-width:360px) {
+    .ant-layout-header{
+        height: 40px;
+        width: calc(100% - 80px);
+    }
+    .ant-layout-sider{
+        width: 60px !important;
+        flex-basis: 0px !important;
+        min-width: 60px !important;
+    }
+    .ant-layout-sider ul li{
+        font-size: 0.5rem;
+        padding: 0px 2px 0px 0px !important;
+    }
+    .ant-layout-sider ul li svg{
+        width: 10px;
+        height: 10px;
+    }
+    .ant-layout-sider ul span{
+        margin-right: 1px !important;
+    }
+}

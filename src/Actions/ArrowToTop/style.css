@@ -1,0 +1,6 @@
+.ArrowToTop{
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    cursor: pointer;
+}

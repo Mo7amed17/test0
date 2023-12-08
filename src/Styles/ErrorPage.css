@@ -1,0 +1,115 @@
+.ErrorPage{
+    margin: 60px auto 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ErrorPage h3 , .ErrorPage .Down{
+    width: 100%;
+    text-align: center;
+}
+.ErrorPage .Down h4{
+    margin-bottom: 30px;
+}
+.ErrorPage .Down a{
+    color: #4f4dbf !important;
+    border: 2px solid #4f4dbf;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition-duration: 0.7s;
+}
+.ErrorPage .Down a:hover{
+    color: white !important;
+    background-color: #4f4dbf;
+    transition-duration: 0.7s;
+}
+.ErrorPageImg{
+    width: 600px;
+    height: 400px;
+}
+.ErrorPageImg img{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:767px) {
+    .ErrorPage h3 {
+        font-size: 1.4rem;
+    }
+    .ErrorPageImg{
+        width: 500px;
+        height: 400px;
+    }
+    .ErrorPage .Down a{
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+}
+@media (max-width:500px) {
+    .ErrorPage h3 {
+        font-size: 1.2rem;
+    }
+    .ErrorPage h3 svg{
+        height: 26px;
+        width: 26px;
+    }
+    .ErrorPageImg{
+        width: 400px;
+        height: 300px;
+        margin-bottom: 100px;
+    }
+    .ErrorPage .Down h4 {
+        font-size: 1.3rem;
+    }
+    .ErrorPage .Down a{
+        padding: 8px 16px;
+        font-size: 0.75rem;
+    }
+}
+@media (max-width:400px) {
+    .ErrorPage h3 {
+        font-size: 1rem;
+    }
+    .ErrorPage h3 svg{
+        height: 22px;
+        width: 22px;
+    }
+    .ErrorPageImg{
+        width: 300px;
+        height: 250px;
+        margin-bottom: 50px;
+    }
+    .ErrorPage .Down h4 {
+        font-size: 1.1rem;
+    }
+    .ErrorPage .Down a{
+        padding: 8px 16px;
+        font-size: 0.6rem;
+        border-width: 1px;
+    }
+}
+@media (max-width:300px) {
+    .ErrorPage h3 {
+        font-size: 0.9rem;
+    }
+    .ErrorPage h3 svg{
+        height: 20px;
+        width: 20px;
+    }
+    .ErrorPageImg{
+        width: 260px;
+        height: 210px;
+        margin-bottom: 50px;
+    }
+    .ErrorPage .Down h4 {
+        font-size: 1rem;
+    }
+    .ErrorPage .Down a{
+        padding: 7px 12px;
+        font-size: 0.5rem;
+        border-width: 1px;
+    }
+    .ErrorPage .Down a svg{
+        width: 20px;
+        height: 20px;
+    }
+}

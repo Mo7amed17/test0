@@ -1,0 +1,110 @@
+.LogoComponent Label{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 1px dashed gray;
+cursor: pointer;
+font-size: 14px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0px auto 20px;
+}
+.LogoComponent{
+    position: relative;
+}
+.LogoComponent .ErrorMessageValidation {
+    right: 0%;
+    bottom: -8%;
+    text-align: center;
+}
+
+.LogoComponent .LOGOIMAGEX{
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    width: fit-content;
+    right: -40%;
+    top: 22%;
+    transform: translate(50%,50%);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(250, 67, 67);
+    font-size: 0.9rem;
+    padding: 2px 4px;
+}
+.LogoComponent .LOGOIMAGE{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f5f5f5;
+}
+.LogoComponent .LOGOIMAGE img{
+    width: 101%;
+    height: 101%;
+    border-radius: 50%;
+}
+@media (max-width:767px) {
+    .LogoComponent Label {
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .LogoComponent .LOGOIMAGE{
+        width: 80px;
+        height: 80px;
+    }
+    .LogoComponent .LOGOIMAGEX{
+        right: -50%;
+    }
+}
+@media (max-width:575px) {
+    .LogoComponent Label {
+        width: 75px !important;
+        height: 75px !important;
+    }
+    .LogoComponent Label>svg{
+        width: 25px;
+        height: 25px;
+    }
+    .LogoComponent .LOGOIMAGE{
+        width: 75px;
+        height: 75px;
+    }
+    .LogoComponent .LOGOIMAGEX{
+        font-size: 0.7rem;
+    }
+}
+.ErrorLogoValidation{
+    border-color: red !important;
+    transition-duration: 0.8s;
+}
+.ErrorLogoValidation svg{
+    color: rgb(236, 4, 4) !important;
+    transition-duration: 0.8s;
+}
+
+@media (max-width:450px) {
+    .LogoComponent {
+        margin-bottom: 5px !important;
+    }
+    .LogoComponent Label {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .LogoComponent .LOGOIMAGE{
+        width: 60px;
+        height: 60px;
+    }
+    .LogoComponent .LOGOIMAGEX{
+        font-size: 0.65rem;
+    }
+    .LogoComponent .LOGOIMAGEX svg{
+        height: 12px;
+        width: 12px;
+    }
+}

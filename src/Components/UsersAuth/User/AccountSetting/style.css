@@ -1,0 +1,36 @@
+.EditForm{
+    margin-top: 30px;
+}
+@media (max-width:767px) {
+    .ant-tabs-tab{
+        font-size: 0.7rem !important;
+    }
+}
+@media (max-width:575px) {
+    .ant-tabs-tab{
+        font-size: 0.6rem !important;
+    }
+}
+@media (max-width:450px) {
+    .ant-tabs-tab{
+        font-size: 0.5rem !important;
+    }
+    .EditForm .LogoComponent{
+        margin: 20px 0px;
+    }
+    .EditForm .LogoComponent .form-label{
+        width: 100px;
+        height: 100px;
+    }
+    .EditForm .FormButton{
+        margin: 20px 0px;
+    }
+}
+@media (max-width:340px) {
+    .EditForm .LogoComponent{
+        margin: 15px 0px;
+    }
+    .EditForm .FormButton{
+        margin: 20px 0px;
+    }
+}

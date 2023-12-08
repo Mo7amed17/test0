@@ -1,0 +1,551 @@
+.About{
+    min-height: 800px;
+    margin: 180px 0px;
+}
+.About1{
+    margin: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.About1 .Right{
+    width: 475px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.About1 .Right .double_img img{
+    width: 220px;
+    height: 270px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgb(192, 192, 192);
+}
+.About1 .Right .double_img img:first-of-type{
+    margin-bottom: 30px;
+}
+.About1 .Right .single_img img{
+    width: 220px;
+    height: 320px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px rgb(192, 192, 192);
+}
+.About1 .Left{
+    width: calc(100% - 550px) ;
+}
+.About1 .Left .experience{
+    display: flex;
+    align-items: center;
+}
+.About1 .Left .experience span{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.About1 .Left .experience span h6{
+    font-size: 0.85rem;
+}
+.About1 .Left p{
+    color: gray;
+    position: relative;
+}
+.About1 .Left p::after{
+    color: black;
+    position: absolute;
+    content: "_";
+    right: -3px;
+    top: 0%;
+    transform: translate(100%,-25%);
+    font-weight: bold;
+}
+.About1 .Left a{
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #4f4dbe;
+    padding: 5px 10px;
+    color: #4f4dbe !important;
+    transition-duration: 0.7s;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.About1 .Left a:hover{
+    transition-duration: 0.7s;
+    background-color: #4f4dbe;
+    color: white !important;
+}
+.About1 .Left h1{
+    font-size: 4.8rem;
+    font-weight: normal;
+    color: #4f4dbe;
+    position: relative;
+    width: fit-content;
+}
+.About1 .Left h1::after{
+    content: "+";
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    transform: translate(100%,-30%);
+    font-size: 1.7rem;
+}
+.About2{
+    margin: 150px 0px 100px;
+    padding: 100px 40px;
+    background-color: #f9fafb ;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+.About2 .about_card{
+    transition-duration: 1s;
+    box-shadow: 0px 0px 10px 2px rgb(212, 212, 212);
+    width: 280px;
+    min-height: 280px;
+    text-align: center;
+    padding: 20px 20px 0px;
+    border-radius: 10px;
+    cursor: default;
+}
+.About2 .about_card svg{
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.About2 .about_card h4{
+    font-weight: bold;
+}
+.About2 .about_card p{
+    margin-top: 20px;
+    color: gray;
+    font-size: 0.85rem;
+}
+.About2 .about_card:hover{
+    transition-duration: 1s;
+    box-shadow: 0px 0px 10px 2px rgb(145, 145, 145) ;
+    background-color: black;
+    color: white;
+}
+.About2 .about_card:hover p{
+    color: #605ee9;
+}
+.our_goals{
+    font-size: 5rem;
+    font-weight: bold;
+    color: gray;
+    width: fit-content;
+    margin: 0px auto;
+    border-bottom: 4px solid gray;
+    padding: 0px 5px;
+    cursor: default;
+    transition-duration: 0.5s;
+}
+.our_goals:hover{
+    color: black;
+    transition-duration: 0.5s;
+    border-color: black;
+}
+.About3{
+    margin: 80px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.About3 .goal{
+    box-shadow: 0px 0px 10px 1px rgb(214, 214, 214) ;
+    border-radius: 5px;
+    width: 80%;
+    display: flex;
+    margin: 20px 0px;
+    font-size: 1.2rem;
+    align-items: center;
+    padding: 10px 8px;
+    transition-duration: 0.5s;
+    cursor: default;
+}
+.About3 .goal p{
+margin: 0 10px 0px 0px;
+}
+.About3 .goal:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 1px rgb(196, 196, 196) ;
+}
+
+@media (max-width:1210px) {
+    .About1 .Left p {
+        font-size: 0.95rem;
+    }
+    .About3 .goal{
+        width: 90%;
+    }
+}
+@media (max-width:1180px) {
+    .About1 .Right{
+        width: 430px;
+    }
+    .About1 .Right .double_img img{
+        width: 200px;
+        height: 240px;
+    }
+    .About1 .Right .single_img img{
+        width: 200px;
+        height: 300px;
+    }
+    .About1 .Left{
+        width: calc(100% - 470px) ;
+    }
+    .About1 .Left a{
+        font-size: 1.1rem;
+    }
+    .About1 .Left h1{
+        font-size: 4.4rem;
+    }
+}
+@media (max-width:1080px) {
+    .About1 .Right{
+        width: 380px;
+    }
+    .About1 .Right .double_img img{
+        width: 180px;
+        height: 220px;
+    }
+    .About1 .Right .double_img img:first-of-type{
+        margin-bottom: 20px;
+    }
+    .About1 .Right .single_img img{
+        width: 180px;
+        height: 270px;
+    }
+    .About1 .Left{
+        width: calc(100% - 415px) ;
+    }
+    .About1 .Left a{
+        font-size: 1rem;
+    }
+    .About1 .Left h1{
+        font-size: 4rem;
+    }
+    .About1 .Left h1::after{
+        font-size: 1.5rem;
+    }
+    .About3 .goal{
+        width: 95%;
+        font-size: 1.1rem;
+    }
+    .About3 .goal svg{
+        width: 36px;
+        height: 36px;
+    }
+}
+@media (max-width:1015px) {
+    .About1 .Left p {
+        font-size: 0.85rem;
+    }
+}
+@media (max-width:960px) {
+    .About1 .Right{
+        width: 340px;
+    }
+    .About1 .Right .double_img img{
+        width: 160px;
+        height: 200px;
+    }
+    .About1 .Right .single_img img{
+        width: 160px;
+        height: 200px;
+    }
+    .About1 .Left{
+        width: calc(100% - 375px) ;
+    }
+    .About1 .Left a{
+        font-size: 0.9rem;
+    }
+    .About1 .Left h1{
+        font-size: 3.5rem;
+    }
+    .About1 .Left h2{
+        font-size: 1.5rem;
+    }
+    .About1 .Left h1::after{
+        font-size: 1.3rem;
+    }
+    .About1 .Left p {
+        font-size: 0.8rem;
+    }
+    .About2{
+        justify-content: space-between;
+    }
+    .About2 .about_card{
+        width: 240px;
+        min-height: 250px;
+        padding: 10px 10px 0px;
+    }
+    .About2 .about_card svg{
+        margin-top: 15px;
+    }
+    .About2 .about_card p{
+        font-size: 0.75rem;
+    }
+    .About3 .goal{
+        width: 90%;
+        font-size: 1rem;
+    }
+    .About3 .goal p{
+        margin-right: 5px;
+    }
+    .About3 .goal svg{
+        width: 32px;
+        height: 32px;
+    }
+}
+@media (max-width:900px) {
+    .About3 .goal{
+        width: 95%;
+    }
+}
+@media (max-width:850px) {
+    .About2{
+        padding: 80px 20px;
+    }
+    .About2 .about_card{
+        width: 225px;
+    }
+    .About3 .goal{
+        width: 96%;
+        font-size: 0.9rem;
+    }
+    .About3 .goal svg{
+        width: 28px;
+        height: 28px;
+    }
+}
+@media (max-width:767px) {
+    .About1{
+        flex-wrap: wrap;
+    }
+    .About1 .Right{
+        width: 100% ;
+        justify-content: center;
+    }
+    .About1 .Left{
+        width: 100% ;
+    }
+    .About1 .Right .double_img{
+        width: 300px;
+        margin-left: 25px;
+    }
+    .About1 .Right .double_img img{
+        width: 300px;
+        height: 350px;
+    }
+    .About1 .Right .single_img img{
+        width: 300px;
+        height: 390px;
+    }
+    .About1 .Right .double_img img:first-of-type{
+        margin-bottom: 25px;
+    }
+    .About1 .Left .experience span h6{
+        font-size: 0.85rem;
+    }
+    .About1 .Left a{
+        font-size: 1.2rem;
+    }
+    .About1 .Left h1{
+        font-size: 4.8rem;
+    }
+    .About1 .Left h1::after{
+        font-size: 1.7rem;
+    }
+    .About1 .Left p {
+        font-size: 0.95rem;
+    }
+    .About2 .about_card{
+        width: 200px;
+        min-height: 220px;
+        padding: 10px 10px 0px;
+    }
+    .About2 .about_card svg{
+        margin-top: 10px;
+        width: 50px;
+        height: 50px;
+    }
+    .About2 .about_card h4{
+        font-size: 1.2rem;
+    }
+    .About2 .about_card p{
+        font-size: 0.7rem;
+    }
+    .our_goals{
+        font-size: 4rem;
+        border-bottom: 3px solid gray;
+    }
+    .About3{
+        margin: 80px 20px;
+    }
+    .About3 .goal{
+        width: 96%;
+        margin: 15px 0px;
+        font-size: 0.85rem;
+        padding: 10px 8px;
+    }
+}
+@media (max-width:666px) {
+    .About1 .Right .double_img{
+        width: 250px;
+        margin-left: 20px;
+    }
+    .About1 .Right .double_img img{
+        width: 250px;
+        height: 300px;
+    }
+    .About1 .Right .single_img img{
+        width: 250px;
+        height: 330px;
+    }
+    .About1 .Right .double_img img:first-of-type{
+        margin-bottom: 20px;
+    }
+    .About1 .Left .experience span h6{
+        font-size: 0.7rem;
+    }
+    .About1 .Left a{
+        font-size: 1.1rem;
+    }
+    .About1 .Left h1{
+        font-size: 4.5rem;
+    }
+    .About1 .Left h1::after{
+        font-size: 1.5rem;
+    }
+    .About1 .Left p {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+    .About2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .About2 .about_card{
+        width: 280px;
+        margin: 30px;
+        min-height: 280px;
+        padding: 20px 20px 0px;
+    }
+    .About2 .about_card svg{
+        width: 75px;
+        height: 75px;
+    }
+    .About2 .about_card p{
+        font-size: 0.95rem;
+    }
+    .About2 .about_card h4{
+        font-size: 1.4rem;
+    }
+    .our_goals{
+        font-size: 3.5rem;
+    }
+    .About3 .goal{
+        margin: 15px 0px;
+        font-size: 0.8rem;
+        padding: 8px 6px;
+    }
+}
+@media (max-width:560px) {
+    .About1{
+        margin: 0px 20px;
+    }
+    .About1 .Right .double_img{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .About1 .Right .double_img img{
+        width: 100%;
+        height: 100%;
+    }
+    .About1 .Right .single_img img{
+        width: 100%;
+        height: 100%;
+    }
+    .About1 .Right .double_img img:first-of-type{
+        margin-bottom: 40px;
+    }
+    .About1 .Left .experience span{
+        margin-right: 5px;
+    }
+    .About1 .Left .experience span h6{
+        font-size: 0.6rem;
+        margin-bottom: 4px;
+    }
+    .About1 .Left a{
+        font-size: 1rem;
+    }
+    .About1 .Left h1{
+        font-size: 4rem;
+    }
+    .About1 .Left h1::after{
+        font-size: 1.2rem;
+    }
+    .About1 .Left p {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width:400px) {
+    .About2{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .About2 .about_card{
+        width: 240px;
+        margin: 20px;
+        min-height: 250px;
+        padding: 20px 10px 0px;
+    }
+    .About2 .about_card svg{
+        width: 55px;
+        height: 55px;
+    }
+    .About2 .about_card p{
+        font-size: 0.8rem;
+    }
+    .About2 .about_card h4{
+        font-size: 1rem;
+    }
+    .our_goals{
+        font-size: 3rem;
+        border-bottom: 2px solid gray;
+    }
+    .About3 {
+        margin: 50px 10px;
+    }
+    .About3 .goal{
+        margin: 10px 0px;
+        font-size: 0.7rem;
+        padding: 6px;
+    }
+    .About3 .goal svg{
+        width: 24px;
+        height: 24px;
+    }
+    .About3 .goal p{
+        margin: 0;
+    }
+    .About3 .goal:hover{
+        transform: scale(1.05);
+    }
+}
+@media (max-width:340px) {
+    .About2{
+        margin-bottom: 70px;
+    }
+    .our_goals{
+        font-size: 2.5rem;
+        border-bottom: 2px solid gray;
+    }
+    .About3 .goal{
+        margin: 10px 0px;
+        font-size: 0.6rem;
+        padding: 4px;
+    }
+    .About3 .goal svg{
+        width: 18px;
+        height: 18px;
+    }
+}
